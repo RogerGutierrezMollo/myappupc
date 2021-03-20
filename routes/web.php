@@ -16,13 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/student', function () {
-    return view('welcome');
-});
-Route::get('/admin', function () {
-    return view('admin/index');
-});
-Route:: get('list/student',[StudentController::class, 'index']);
-Route::get('/template', function () {
-    return view('template/index');
+Route::get('/materias', function () {
+    return view('materias');
 });
